@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-950: #070B11;
+  --color-slate-900: #0B0F19;
+  --color-slate-850: #0F172A;
+  --color-slate-800: #1E293B;
+  --color-slate-750: #243247;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+
+  --color-chalk-white: #F8FAFC;
+  --color-chalk-cyan: #0EA5E9;
+  --color-chalk-emerald: #10B981;
+  --color-chalk-amber: #F59E0B;
+  --color-chalk-coral: #F43F5E;
+  --color-chalk-violet: #8B5CF6;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Plus Jakarta Sans", "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  --bg-slate: #0B0F19;
+  --bg-card: rgba(30, 41, 59, 0.65);
+  --border-card: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  background-color: #0B0F19;
+  color: #F1F5F9;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Linear/Stripe Inspired Slate Blackboard Background with Subtle Grid */
+.bg-slate-linear {
+  background-color: #0B0F19;
+  background-image: 
+    radial-gradient(circle at 50% -20%, rgba(14, 165, 233, 0.07) 0%, transparent 60%),
+    radial-gradient(circle at 100% 50%, rgba(16, 185, 129, 0.04) 0%, transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+}
+
+/* Clean Understated Slate Glassmorphism */
+.slate-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slate-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.slate-card-interactive:hover {
+  border-color: rgba(14, 165, 233, 0.35);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(14, 165, 233, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Custom Minimal Range Sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  background: #1E293B;
+  height: 5px;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0EA5E9;
+  cursor: pointer;
+  border: 2px solid #0B0F19;
+  box-shadow: 0 0 8px rgba(14, 165, 233, 0.5);
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
