@@ -165,17 +165,17 @@ export const MathAndFilterMoat: React.FC = () => {
               <div className="p-3.5 rounded-xl bg-slate-900 border border-white/5 space-y-1">
                 <div className="font-bold text-chalk-emerald flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  <span>Mahalanobis Distance Gating (&chi;² &gt; 6.2):</span>
+                  <span>Mahalanobis Distance Gating:</span>
                 </div>
                 <p className="text-[11px] text-slate-400 leading-relaxed">
-                  Rejects acoustic multipath reflections when teacher's arm or body breaks direct line of sight (&alpha; = 0.001).
+                  Rejects acoustic multipath reflections when teacher's arm or body breaks direct line of sight.
                 </p>
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-900 border border-white/5 space-y-1">
                 <div className="font-bold text-chalk-cyan flex items-center gap-1.5">
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  <span>300µs Temporal Guard Delay:</span>
+                  <span>Temporal Guard Delay:</span>
                 </div>
                 <p className="text-[11px] text-slate-400 leading-relaxed">
                   Prevents near-field acoustic ring-down interference on compact surfaces before initiating envelope sampling.
