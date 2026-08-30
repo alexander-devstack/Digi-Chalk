@@ -44,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenPitchDeck }) => {
   const navLinks = [
     { label: 'Overview', href: '#interactive-slate' },
     { label: 'Problem & Retrofit', href: '#problem-comparison' },
-    { label: 'Hardware & BOM', href: '#hardware-architecture' },
+    { label: 'Hardware', href: '#hardware-architecture' },
     { label: 'ARCKF Moat', href: '#arckf-pipeline' },
     { label: 'Market & ROI', href: '#market-economics' },
     { label: '15M Roadmap', href: '#commercialization-roadmap' },

@@ -160,7 +160,7 @@ export const PitchDeckModal: React.FC<PitchDeckModalProps> = ({ isOpen, onClose 
     },
     {
       title: 'Market Opportunity & Unit Economics',
-      subtitle: '1.5 Million Classrooms in India | ₹1,420 BOM Cost → ₹2,000 Retail',
+      subtitle: '1.5 Million Classrooms in India | ₹2,000 Retail Price',
       tag: 'Commercialization',
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 font-mono text-xs">
@@ -175,10 +175,9 @@ export const PitchDeckModal: React.FC<PitchDeckModalProps> = ({ isOpen, onClose 
           <div className="p-4 rounded-xl bg-slate-900 border border-white/10 space-y-2">
             <h5 className="font-bold text-chalk-emerald">Unit Economics:</h5>
             <ul className="space-y-1.5 text-slate-300 text-[11px]">
-              <li>• Bill of Materials (BOM): ₹1,420</li>
-              <li>• Assembly, Calibration & QC: ₹180</li>
-              <li>• Total CoGS: ₹1,600</li>
-              <li>• Sale Price: ₹2,000 (20% Gross Margin)</li>
+              <li>• Target Unit Cost: ₹1,600 CoGS</li>
+              <li>• Retail Price: ₹2,000 (20% Gross Margin)</li>
+              <li>• Cost Advantage: 42.5x cheaper than ₹85,000 Smartboards</li>
             </ul>
           </div>
         </div>
@@ -269,9 +268,7 @@ Digi-Chalk is an edge-computed hardware retrofit transforming standard slate and
 - **Edge AI Architecture:** MobileNetV3-small quantized INT8 running on ESP32-S3 dual-core LX7 MCU for on-device shape beautification and handwriting-to-LaTeX OCR in 14ms.
 - **Multi-Modal Lecture Sync:** Timestamped blackboard stroke vectors paired with teacher audio for automated multilingual revision notes in Hindi, Tamil, Telugu, Kannada, and English.
 
-## 3. Bill of Materials (BOM) & Unit Economics
-- Total Hardware BOM: ₹1,420
-- Assembly & QC: ₹180
+## 3. Unit Economics
 - Total CoGS: ₹1,600
 - Retail Price: ₹2,000 (20.0% Gross Margin)
 - Cost Advantage: 42.5x cheaper than ₹85,000 75" Smartboard IFPDs.

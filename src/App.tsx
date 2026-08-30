@@ -27,7 +27,7 @@ export const App: React.FC = () => {
         {/* SECTION 2: The Problem & The Retrofit Paradigm */}
         <ProblemComparison />
 
-        {/* SECTION 3: Hardware Architecture & Itemized BOM (₹1,055) */}
+        {/* SECTION 3: Hardware Architecture Subsystems */}
         <HardwareBOM />
 
         {/* SECTION 4: Mathematical Moat & Sensing Pipeline (ARCKF & AI) */}
