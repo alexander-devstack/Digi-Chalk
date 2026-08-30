@@ -68,23 +68,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenPitchDeck }) => 
               <ArrowRight className="w-4 h-4" />
             </a>
 
-            <a
-              href="#hardware-architecture"
-              onClick={() => sound.playClick(750)}
-              className="px-5 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-white/10 text-slate-200 hover:text-white font-heading font-semibold text-sm flex items-center gap-2 transition-all"
-            >
-              <Cpu className="w-4 h-4 text-chalk-emerald" />
-              <span>View Technical Architecture</span>
-            </a>
-
             <button
               onClick={() => {
                 sound.playClick(800);
                 onOpenPitchDeck();
               }}
-              className="px-4 py-3.5 rounded-xl text-slate-400 hover:text-white font-mono text-xs flex items-center gap-1.5 transition-colors"
+              className="px-5 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-white/10 text-slate-200 hover:text-white font-heading font-semibold text-sm flex items-center gap-2 transition-all"
             >
-              <Download className="w-3.5 h-3.5 text-chalk-cyan" />
+              <Download className="w-4 h-4 text-chalk-cyan" />
               <span>Pitch Playbook (₹13L Round)</span>
             </button>
 
