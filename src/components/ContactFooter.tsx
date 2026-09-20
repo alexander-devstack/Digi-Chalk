@@ -51,7 +51,7 @@ export const ContactFooter: React.FC<ContactFooterProps> = ({ onOpenPitchDeck })
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-chalk-cyan/10 border border-chalk-cyan/30 text-xs font-mono text-chalk-cyan">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>₹13L Seed Round • Investor & Pilot Inquiries</span>
+            <span>₹23L Seed Round • Investor & Pilot Inquiries</span>
           </div>
 
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
@@ -59,21 +59,20 @@ export const ContactFooter: React.FC<ContactFooterProps> = ({ onOpenPitchDeck })
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300 font-sans leading-relaxed">
-            Interested in leading our ₹13L seed round, deploying classroom pilots, or reviewing technical IP? Reach out directly.
+            Interested in leading our ₹23L seed round, deploying classroom pilots, or reviewing technical IP? Reach out directly.
           </p>
 
           {/* Pitch Playbook CTA */}
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
-            <button
-              onClick={() => {
-                sound.playClick(800);
-                onOpenPitchDeck();
-              }}
+            <a
+              href="/Digi-Chalk_Business_Model_23L.pdf"
+              download="Digi-Chalk_Business_Model_23L.pdf"
+              onClick={() => sound.playClick(800)}
               className="px-5 py-3 rounded-xl bg-chalk-cyan hover:bg-sky-400 text-slate-950 font-heading font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-sky-500/15 transition-all active:scale-[0.98]"
             >
               <Download className="w-4 h-4 text-slate-950" />
-              <span>Download Pitch Playbook</span>
-            </button>
+              <span>Download Pitch Playbook (₹23L Round)</span>
+            </a>
           </div>
         </div>
 
@@ -222,7 +221,7 @@ export const ContactFooter: React.FC<ContactFooterProps> = ({ onOpenPitchDeck })
                   <label className="text-slate-400 block mb-1">Message:</label>
                   <textarea
                     rows={3}
-                    placeholder="We would like to discuss leading the ₹13L seed round / classroom pilot..."
+                    placeholder="We would like to discuss leading the ₹23L seed round / classroom pilot..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-chalk-cyan resize-none"

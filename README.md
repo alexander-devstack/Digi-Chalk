@@ -13,7 +13,7 @@
 - **Direct Volume Manufacturing Cost (COGS)**: **₹1,055 per unit** (Target BOM for 100+ units)
 - **Retail / Government Procurement Price**: **₹2,000 per unit** (~47.25% Gross Margin)
 - **Operational Breakeven Volume**: **1,058 – 1,376 units** (Covers ₹10L Phase B Fixed Operational Costs)
-- **Seed Funding Requirement**: **₹13,00,000 ($15.5k USD)** across a 15-Month Gated Milestone Architecture
+- **Seed Funding Requirement**: **₹23,18,850 ($27.8k USD)** across a 15-Month Gated Milestone Architecture
 
 ---
 
@@ -52,25 +52,25 @@ $$\gamma_{k,i} = (Z_{k,i} - H_{k,i}X_k)^T (H_{k,i}P_k^-H_{k,i}^T + R_{k,i})^{-1}
 
 ## 📈 Market Dynamics & Tamil Nadu SSA Channel
 
-- **TAM (Total Addressable Market)**: 37,626 TN Schools × 2 Units/School × ₹2,000 = **₹15.05 Crores**
-- **SAM (Serviceable Addressable Market)**: 3-Year Target (10% of TN Schools) = **₹1.50 Crores**
-- **SOM (Serviceable Obtainable Market)**: Year 1–2 Pilot Rollout (1% of Schools) = **₹15.05 Lakhs**
+- **TAM (Total Addressable Market)**: 37,626 TN Schools × 2 Units/School × ₹45,000 = **₹338.63 Crores**
+- **SAM (Serviceable Addressable Market)**: 3-Year Target (10% of TN Schools) = **₹33.86 Crores**
+- **SOM (Serviceable Obtainable Market)**: Year 1–2 Pilot Rollout (1% of Schools) = **₹33.86 Lakhs**
 - **SSA Multiplier**: A single standard **₹2.4 Lakh per school SSA ICT Grant** equips **120 full classrooms** with Digi-Chalk instead of only 1–2 smartboards.
 
 ---
 
-## 🚀 Commercialization Roadmap (₹13,00,000 Seed Ask)
+## 🚀 Commercialization Roadmap (₹23,18,850 Seed Ask)
 
-- **Phase A: Path to TRL-6 (Months 1–6) — ₹3,00,000**
+- **Phase A: Path to TRL-6 (Months 1–6) — ₹2,64,850**
   - Phase 1: Bench Prototyping (₹90,000)
-  - Phase 2: Small-Batch Fabrication (₹1,35,000)
-  - Phase 3: Pilot Deployment (₹75,000)
-- **Phase B: Path to TRL-9 Scale (Months 7–15) — ₹10,00,000**
-  - 100+ Unit Production Run (₹3,50,000)
-  - Multi-District Pilot (₹2,50,000)
-  - BIS & Safety Compliance (₹1,00,000)
-  - Teacher Training & Field Operations (₹2,00,000)
-  - Operational Contingency (₹1,00,000)
+  - Phase 2: Small-Batch Fabrication (₹1,00,000)
+  - Phase 3: Pilot Deployment (₹74,850)
+- **Phase B: Path to TRL-9 Scale (Months 7–15) — ₹20,54,000**
+  - 100+ Unit Production Run (₹7,50,000)
+  - Multi-District Pilot (₹5,00,000)
+  - BIS & Safety Compliance (₹2,50,000)
+  - Teacher Training & Field Operations (₹3,50,000)
+  - Operational Contingency (₹2,04,000)
 
 ---
 

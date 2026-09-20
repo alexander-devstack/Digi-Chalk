@@ -86,7 +86,7 @@ export const InvestorPortal: React.FC<InvestorPortalProps> = ({ onOpenPitchDeck 
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-chalk-cyan/10 border border-chalk-cyan/30 text-xs font-mono text-chalk-cyan shadow-xl shadow-chalk-cyan/10">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>₹13L Seed Round • TRL-2 → TRL-9 Pathway</span>
+            <span>₹23L Seed Round • TRL-2 → TRL-9 Pathway</span>
           </div>
 
           <h2 className="font-heading font-black text-4xl sm:text-5xl text-white tracking-tight">
@@ -94,21 +94,20 @@ export const InvestorPortal: React.FC<InvestorPortalProps> = ({ onOpenPitchDeck 
           </h2>
 
           <p className="text-base sm:text-lg text-slate-300 font-mono max-w-2xl mx-auto leading-relaxed">
-            <strong className="text-chalk-emerald">₹13,00,000</strong> carries Digi-Chalk from TRL-2 to a certified, multi-district, production-ready market leader across India's 1.5M classrooms in 12–15 months.
+            <strong className="text-chalk-emerald">₹23,18,850</strong> carries Digi-Chalk from TRL-2 to a certified, multi-district, production-ready market leader across India's 1.5M classrooms in 12–15 months.
           </p>
 
           {/* Direct Link to Pitch Playbook CTA */}
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
-            <button
-              onClick={() => {
-                sound.playClick(800);
-                onOpenPitchDeck();
-              }}
+            <a
+              href="/Digi-Chalk_Business_Model_23L.pdf"
+              download="Digi-Chalk_Business_Model_23L.pdf"
+              onClick={() => sound.playClick(800)}
               className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-chalk-cyan to-chalk-emerald text-slate-950 font-heading font-bold text-sm flex items-center gap-2 shadow-lg shadow-chalk-cyan/25 hover:shadow-chalk-cyan/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
             >
               <Download className="w-4 h-4 text-slate-950" />
-              <span>Download Pitch Playbook</span>
-            </button>
+              <span>Download Pitch Playbook (₹23L Round)</span>
+            </a>
           </div>
         </div>
 
@@ -299,7 +298,7 @@ export const InvestorPortal: React.FC<InvestorPortalProps> = ({ onOpenPitchDeck 
                   <label className="text-slate-400 block mb-1">Message / Allocation Inquiry:</label>
                   <textarea
                     rows={3}
-                    placeholder="We would like to participate in the ₹13L seed round / request data room..."
+                    placeholder="We would like to participate in the ₹23L seed round / request data room..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-chalk-cyan resize-none"

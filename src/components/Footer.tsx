@@ -110,7 +110,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPitchDeck }) => {
               </li>
               <li>
                 <a href="#roadmap" className="hover:text-chalk-emerald transition-colors flex items-center gap-1">
-                  <ChevronRight className="w-3 h-3" /> ₹13L Seed Roadmap
+                  <ChevronRight className="w-3 h-3" /> ₹23L Seed Roadmap
                 </a>
               </li>
             </ul>
@@ -122,18 +122,17 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPitchDeck }) => {
               Investor Relations
             </h4>
             <p className="text-[11px] font-mono text-slate-400">
-              Seeking ₹13 Lakhs for 50-classroom pilot deployment & regulatory certs.
+              Seeking ₹23.18 Lakhs for 50-classroom pilot deployment & regulatory certs.
             </p>
-            <button
-              onClick={() => {
-                sound.playClick(900);
-                onOpenPitchDeck();
-              }}
+            <a
+              href="/Digi-Chalk_Business_Model_23L.pdf"
+              download="Digi-Chalk_Business_Model_23L.pdf"
+              onClick={() => sound.playClick(900)}
               className="w-full py-2 px-3 rounded-xl bg-chalk-cyan/20 hover:bg-chalk-cyan/30 border border-chalk-cyan/40 text-chalk-cyan font-mono text-xs font-semibold flex items-center justify-center gap-1.5 transition-all shadow-md shadow-chalk-cyan/10"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Pitch Playbook</span>
-            </button>
+              <span>Pitch Playbook (₹23L)</span>
+            </a>
           </div>
 
         </div>

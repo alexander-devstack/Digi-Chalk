@@ -87,16 +87,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenPitchDeck }) => {
             </a>
 
             {/* Secondary Glass Playbook CTA */}
-            <button
-              onClick={() => {
-                sound.playClick(1000);
-                onOpenPitchDeck();
-              }}
+            <a
+              href="/Digi-Chalk_Business_Model_23L.pdf"
+              download="Digi-Chalk_Business_Model_23L.pdf"
+              onClick={() => sound.playClick(1000)}
               className="px-6 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-white/15 hover:border-chalk-cyan/40 text-slate-200 hover:text-white font-heading font-semibold text-sm flex items-center gap-2 backdrop-blur-md transition-all active:scale-[0.98]"
             >
               <Download className="w-4 h-4 text-chalk-cyan" />
-              <span>Download Pitch Playbook (₹13L Round)</span>
-            </button>
+              <span>Download Pitch Playbook (₹23L Round)</span>
+            </a>
 
             {/* Tertiary Schematics CTA */}
             <a

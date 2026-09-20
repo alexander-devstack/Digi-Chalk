@@ -15,12 +15,12 @@ export interface RoadmapPhase {
 }
 
 export const COMMERCIALIZATION_ROADMAP = {
-  totalSeedBudgetInr: 1300000,
-  totalSeedBudgetFormatted: '₹13,00,000 ($15.5k)',
+  totalSeedBudgetInr: 2318850,
+  totalSeedBudgetFormatted: '₹23,18,850 ($27.8k)',
   timeline: '15 Months (Gated Milestone Architecture)',
   phaseA: {
     title: 'Phase A: Path to TRL-6 (Months 1–6)',
-    budgetInr: 300000,
+    budgetInr: 264850,
     items: [
       {
         phase: 'Phase 1: Bench Prototyping',
@@ -29,43 +29,43 @@ export const COMMERCIALIZATION_ROADMAP = {
       },
       {
         phase: 'Phase 2: Small-Batch Fabrication',
-        budgetInr: 135000,
+        budgetInr: 100000,
         description: '10–15 unit batch, field logistics, safety checks, and design iteration buffer.',
       },
       {
         phase: 'Phase 3: Pilot Deployment',
-        budgetInr: 75000,
+        budgetInr: 74850,
         description: 'Initial classroom pilot, teacher onboarding, travel, and contingency reserve.',
       },
     ],
   },
   phaseB: {
     title: 'Phase B: Path to TRL-9 Scale (Months 7–15)',
-    budgetInr: 1000000,
+    budgetInr: 2054000,
     items: [
       {
         phase: '100+ Unit Production Run',
-        budgetInr: 350000,
+        budgetInr: 750000,
         description: 'Scaled manufacturing with regional Coimbatore/Tamil Nadu contract partner.',
       },
       {
         phase: 'Multi-District Pilot',
-        budgetInr: 250000,
+        budgetInr: 500000,
         description: 'Classroom deployment across 3–5 districts over a full academic term.',
       },
       {
         phase: 'BIS & Safety Compliance',
-        budgetInr: 100000,
+        budgetInr: 250000,
         description: 'Official certification for state government tender & GeM eligibility.',
       },
       {
         phase: 'Teacher Training & Field Operations',
-        budgetInr: 200000,
+        budgetInr: 350000,
         description: 'Regional rollout, educator onboarding layer, and maintenance support.',
       },
       {
         phase: 'Operational Contingency',
-        budgetInr: 100000,
+        budgetInr: 204000,
         description: 'Dedicated operational and supply chain contingency reserve.',
       },
     ],
@@ -176,15 +176,15 @@ export const ROADMAP_DATA: RoadmapMilestone[] = [
 ];
 
 export const FUNDING_ALLOCATION = {
-  totalTargetInr: 1300000,
-  totalTargetUsd: '$15.5k',
+  totalTargetInr: 2318850,
+  totalTargetUsd: '$27.8k',
   timelineMonths: 15,
   breakdown: [
-    { category: 'Phase A: Prototyping & Small-Batch Pilot', percentage: 23, amountInr: 300000, color: '#0EA5E9' },
-    { category: 'Phase B: 100+ Unit Production Run', percentage: 27, amountInr: 350000, color: '#10B981' },
-    { category: 'Phase B: Multi-District Pilot (3–5 Districts)', percentage: 19, amountInr: 250000, color: '#F59E0B' },
-    { category: 'Phase B: BIS & Regulatory Certification', percentage: 8, amountInr: 100000, color: '#F43F5E' },
-    { category: 'Phase B: Teacher Training & Field Operations', percentage: 15, amountInr: 200000, color: '#8B5CF6' },
-    { category: 'Phase B: Operational Contingency', percentage: 8, amountInr: 100000, color: '#64748B' },
+    { category: 'Phase A: Prototyping & Small-Batch Pilot', percentage: 11, amountInr: 264850, color: '#0EA5E9' },
+    { category: 'Phase B: 100+ Unit Production Run', percentage: 32, amountInr: 750000, color: '#10B981' },
+    { category: 'Phase B: Multi-District Pilot (3–5 Districts)', percentage: 22, amountInr: 500000, color: '#F59E0B' },
+    { category: 'Phase B: BIS & Regulatory Certification', percentage: 11, amountInr: 250000, color: '#F43F5E' },
+    { category: 'Phase B: Teacher Training & Field Operations', percentage: 15, amountInr: 350000, color: '#8B5CF6' },
+    { category: 'Phase B: Operational Contingency', percentage: 9, amountInr: 204000, color: '#64748B' },
   ],
 };

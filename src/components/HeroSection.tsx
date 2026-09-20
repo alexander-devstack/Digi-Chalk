@@ -93,16 +93,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <ArrowRight className="w-4 h-4" />
             </a>
 
-            <button
-              onClick={() => {
-                sound.playClick(800);
-                onOpenPitchDeck();
-              }}
+            <a
+              href="/Digi-Chalk_Business_Model_23L.pdf"
+              download="Digi-Chalk_Business_Model_23L.pdf"
+              onClick={() => sound.playClick(800)}
               className="px-5 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-white/10 text-slate-200 hover:text-white font-heading font-semibold text-sm flex items-center gap-2 transition-all"
             >
               <Download className="w-4 h-4 text-chalk-cyan" />
-              <span>Pitch Playbook (₹13L Round)</span>
-            </button>
+              <span>Pitch Playbook (₹23L Round)</span>
+            </a>
           </div>
         </div>
 

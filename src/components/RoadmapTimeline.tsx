@@ -29,7 +29,7 @@ export const RoadmapTimeline: React.FC<RoadmapTimelineProps> = ({ onOpenPitchDec
             <span>15-Month Gated Commercialization Pathway</span>
           </div>
           <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
-            TRL-2 to TRL-9 Roadmap (₹13L Seed Round)
+            TRL-2 to TRL-9 Roadmap (₹23L Seed Round)
           </h2>
           <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed">
             A structured, risk-mitigated pathway moving from bench prototype to 50-classroom district pilots and state education tender onboarding.
@@ -39,7 +39,7 @@ export const RoadmapTimeline: React.FC<RoadmapTimelineProps> = ({ onOpenPitchDec
         {/* 2-Column Grid: Phase A vs Phase B */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           
-          {/* Phase A: Path to TRL-6 (Months 1–6) — ₹3,00,000 */}
+          {/* Phase A: Path to TRL-6 (Months 1–6) — ₹2,64,850 */}
           <div className="slate-card p-6 sm:p-7 border border-chalk-cyan/30 bg-slate-950/80 shadow-2xl space-y-5">
             
             <div className="flex items-center justify-between pb-4 border-b border-white/10">
@@ -54,7 +54,7 @@ export const RoadmapTimeline: React.FC<RoadmapTimelineProps> = ({ onOpenPitchDec
 
               <div className="text-right font-mono">
                 <span className="text-[10px] text-slate-400 uppercase block">Phase Budget:</span>
-                <div className="font-heading font-black text-2xl text-chalk-cyan">₹3,00,000</div>
+                <div className="font-heading font-black text-2xl text-chalk-cyan">₹2,64,850</div>
               </div>
             </div>
 
@@ -79,7 +79,7 @@ export const RoadmapTimeline: React.FC<RoadmapTimelineProps> = ({ onOpenPitchDec
 
           </div>
 
-          {/* Phase B: Path to TRL-9 Scale (Months 7–15) — ₹10,00,000 */}
+          {/* Phase B: Path to TRL-9 Scale (Months 7–15) — ₹20,54,000 */}
           <div className="slate-card p-6 sm:p-7 border border-chalk-emerald/30 bg-slate-950/80 shadow-2xl space-y-5">
             
             <div className="flex items-center justify-between pb-4 border-b border-white/10">
@@ -94,7 +94,7 @@ export const RoadmapTimeline: React.FC<RoadmapTimelineProps> = ({ onOpenPitchDec
 
               <div className="text-right font-mono">
                 <span className="text-[10px] text-slate-400 uppercase block">Phase Budget:</span>
-                <div className="font-heading font-black text-2xl text-chalk-emerald">₹10,00,000</div>
+                <div className="font-heading font-black text-2xl text-chalk-emerald">₹20,54,000</div>
               </div>
             </div>
 
@@ -125,24 +125,23 @@ export const RoadmapTimeline: React.FC<RoadmapTimelineProps> = ({ onOpenPitchDec
         <div className="slate-card p-6 sm:p-8 border border-white/10 bg-slate-950 flex flex-wrap items-center justify-between gap-4">
           <div className="space-y-1">
             <h4 className="font-heading font-bold text-lg text-white">
-              Total Seed Funding Ask: <strong className="text-chalk-cyan">₹13,00,000 ($15.5k)</strong>
+              Total Seed Funding Ask: <strong className="text-chalk-cyan">₹23,18,850 ($27.8k)</strong>
             </h4>
             <p className="text-xs font-mono text-slate-400">
               Covers complete TRL-2 through TRL-9 commercialization over 15 months.
             </p>
           </div>
 
-          <button
-            onClick={() => {
-              sound.playClick(900);
-              onOpenPitchDeck();
-            }}
+          <a
+            href="/Digi-Chalk_Business_Model_23L.pdf"
+            download="Digi-Chalk_Business_Model_23L.pdf"
+            onClick={() => sound.playClick(900)}
             className="px-5 py-3 rounded-xl bg-gradient-to-r from-chalk-cyan to-chalk-emerald text-slate-950 font-heading font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-sky-500/15 hover:scale-[1.02] active:scale-[0.98] transition-all"
           >
             <Sparkles className="w-4 h-4" />
-            <span>Open Pitch Playbook Deck</span>
+            <span>Download Pitch Playbook (₹23L)</span>
             <ArrowRight className="w-4 h-4" />
-          </button>
+          </a>
         </div>
 
       </div>

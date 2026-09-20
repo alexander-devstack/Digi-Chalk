@@ -41,7 +41,7 @@ export const GatedRoadmapVisualizer: React.FC = () => {
         </div>
 
         <div className="flex items-center gap-3 font-mono text-xs text-slate-400">
-          <span className="text-chalk-emerald font-bold">Total Ask: ₹13,00,000 ($15.5k)</span>
+          <span className="text-chalk-emerald font-bold">Total Ask: ₹23,18,850 ($27.8k)</span>
           <span>•</span>
           <span>15 Months</span>
         </div>

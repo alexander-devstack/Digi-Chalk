@@ -28,8 +28,8 @@ export const PitchDeckModal: React.FC<PitchDeckModalProps> = ({ isOpen, onClose 
   const slides = [
     {
       title: 'DIGI-CHALK: Deep-Tech Pitch Deck',
-      subtitle: 'Making Every Blackboard a Digital Classroom at ₹2,000 per unit',
-      tag: 'TRL-2 → TRL-9 Pathway | ₹13L Seed Round',
+      subtitle: 'Making Every Blackboard a Digital Classroom at ₹45,000 per unit',
+      tag: 'TRL-2 → TRL-9 Pathway | ₹23L Seed Round',
       content: (
         <div className="space-y-4 text-center py-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-chalk-cyan/10 border border-chalk-cyan/30 text-xs font-mono text-chalk-cyan">
@@ -44,7 +44,7 @@ export const PitchDeckModal: React.FC<PitchDeckModalProps> = ({ isOpen, onClose 
           </p>
           <div className="grid grid-cols-3 gap-3 max-w-md mx-auto pt-4 font-mono">
             <div className="p-3 rounded-xl bg-slate-900 border border-white/5">
-              <div className="text-lg font-bold text-chalk-emerald">₹2,000</div>
+              <div className="text-lg font-bold text-chalk-emerald">₹45,000</div>
               <div className="text-[10px] text-slate-400">Unit Price</div>
             </div>
             <div className="p-3 rounded-xl bg-slate-900 border border-white/5">
@@ -52,7 +52,7 @@ export const PitchDeckModal: React.FC<PitchDeckModalProps> = ({ isOpen, onClose 
               <div className="text-[10px] text-slate-400">RF Latency</div>
             </div>
             <div className="p-3 rounded-xl bg-slate-900 border border-white/5">
-              <div className="text-lg font-bold text-chalk-amber">₹13 Lakh</div>
+              <div className="text-lg font-bold text-chalk-amber">₹23.18 L</div>
               <div className="text-[10px] text-slate-400">Seed Target</div>
             </div>
           </div>
@@ -254,41 +254,9 @@ export const PitchDeckModal: React.FC<PitchDeckModalProps> = ({ isOpen, onClose 
       origin: { y: 0.6 }
     });
 
-    const markdownDoc = `# DIGI-CHALK (TEAM ZERO RESISTANCE) — INVESTOR PITCH PLAYBOOK
-**Provisional Patent Application No. 202641089516**
-**Round:** ₹13 Lakh Seed Capital | **Target Unit Cost:** ₹2,000 INR
-
----
-
-## 1. Executive Summary
-Digi-Chalk is an edge-computed hardware retrofit transforming standard slate and green blackboards into real-time interactive digital hubs at ₹2,000 per unit—bringing digital equity to the 90% of classrooms left behind by ₹80,000+ smartboards.
-
-## 2. Core Deep-Tech Principles
-- **Acoustic TDOA Multilateration:** 40kHz ultrasonic piezoceramic emitter + Dual I2S MEMS array ($d_1 - d_2 = v \\cdot \\Delta t$) at $\\pm 0.24\\text{mm}$ precision.
-- **Edge AI Architecture:** MobileNetV3-small quantized INT8 running on ESP32-S3 dual-core LX7 MCU for on-device shape beautification and handwriting-to-LaTeX OCR in 14ms.
-- **Multi-Modal Lecture Sync:** Timestamped blackboard stroke vectors paired with teacher audio for automated multilingual revision notes in Hindi, Tamil, Telugu, Kannada, and English.
-
-## 3. Unit Economics
-- Total CoGS: ₹1,600
-- Retail Price: ₹2,000 (20.0% Gross Margin)
-- Cost Advantage: 42.5x cheaper than ₹85,000 75" Smartboard IFPDs.
-
-## 4. Use of ₹13 Lakh Seed Funds
-1. Hardware Tooling & Injection Mold: ₹3,90,000 (30%)
-2. 50-Classroom School Pilot Deployment: ₹3,25,000 (25%)
-3. Edge AI Firmware & Mobile App: ₹2,60,000 (20%)
-4. IP, Patent Filings & BIS Wireless Regulatory Certs: ₹1,95,000 (15%)
-5. Operations & Logistics: ₹1,30,000 (10%)
-
----
-*Team Zero Resistance • 2026*
-`;
-
-    const blob = new Blob([markdownDoc], { type: 'text/markdown;charset=utf-8;' });
-    const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.href = url;
-    link.download = `Digi-Chalk-Pitch-Playbook-13L-Round.md`;
+    link.href = '/Digi-Chalk_Business_Model_23L.pdf';
+    link.download = 'Digi-Chalk_Business_Model_23L.pdf';
     link.click();
   };
 
