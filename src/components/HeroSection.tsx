@@ -106,16 +106,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Quick Highlights Metrics Strip */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-10">
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="slate-card p-3.5 text-center border border-white/5 bg-slate-900/60"
+              className="slate-card p-4 text-center border border-white/5 bg-slate-900/60 flex flex-col justify-center items-center"
             >
-              <div className={`font-heading font-bold text-2xl ${stat.color}`}>
+              <div className={`font-heading font-bold text-2xl sm:text-3xl ${stat.color}`}>
                 {stat.value}
               </div>
-              <div className="text-xs font-semibold text-slate-200 mt-0.5">
+              <div className="text-xs font-semibold text-slate-200 mt-1">
                 {stat.label}
               </div>
               <div className="text-[11px] font-mono text-slate-400 mt-0.5">
