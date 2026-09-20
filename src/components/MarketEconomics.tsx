@@ -18,16 +18,17 @@ import { sound } from '../utils/sound';
 export const MarketEconomics: React.FC = () => {
   const [numSchools, setNumSchools] = useState(500);
   const unitsPerSchool = 2;
-  const unitPrice = 2000;
-  const unitCogs = 1055;
-  const unitMargin = 945;
-  const smartBoardCostPerClassroom = 100000; // conservative ₹1.0L
+  const unitPrice = 45000;
+  const unitCogs = 9270;
+  const unitMargin = 35730;
+  const smartBoardCostPerClassroom = 100000; // ₹1.0L
 
   const totalUnits = numSchools * unitsPerSchool;
   const totalRevenue = totalUnits * unitPrice;
   const totalGrossProfit = totalUnits * unitMargin;
   const smartBoardTotalCost = totalUnits * smartBoardCostPerClassroom;
   const totalCapitalSaved = smartBoardTotalCost - totalRevenue;
+  const capexReductionPercent = Math.round(((smartBoardTotalCost - totalRevenue) / smartBoardTotalCost) * 100);
   const totalStudentsReached = totalUnits * 40; // avg 40 students per classroom
 
   const formatLakhs = (inr: number) => {
@@ -119,25 +120,25 @@ export const MarketEconomics: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 font-mono text-center">
           <div className="slate-card p-4 border border-white/5 bg-slate-900/60">
             <span className="text-[11px] text-slate-400 block uppercase">Procurement Price:</span>
-            <div className="font-heading font-black text-2xl text-white mt-1">₹2,000</div>
+            <div className="font-heading font-black text-2xl text-white mt-1">₹45,000</div>
             <span className="text-[10px] text-slate-400">per classroom retrofit</span>
           </div>
 
           <div className="slate-card p-4 border border-white/5 bg-slate-900/60">
             <span className="text-[11px] text-slate-400 block uppercase">Volume Production Cost:</span>
-            <div className="font-heading font-black text-2xl text-chalk-amber mt-1">₹1,055</div>
-            <span className="text-[10px] text-slate-400">Direct Hardware COGS</span>
+            <div className="font-heading font-black text-2xl text-chalk-amber mt-1">₹9,270</div>
+            <span className="text-[10px] text-slate-400">Kit COGS (1,000-unit vol)</span>
           </div>
 
           <div className="slate-card p-4 border border-chalk-emerald/30 bg-slate-900/80">
             <span className="text-[11px] text-chalk-emerald block uppercase font-bold">Gross Margin:</span>
-            <div className="font-heading font-black text-2xl text-chalk-emerald mt-1">₹945</div>
-            <span className="text-[10px] text-chalk-emerald font-semibold">~47.25% Margin</span>
+            <div className="font-heading font-black text-2xl text-chalk-emerald mt-1">₹35,730</div>
+            <span className="text-[10px] text-chalk-emerald font-semibold">79.4% Margin</span>
           </div>
 
           <div className="slate-card p-4 border border-white/5 bg-slate-900/60">
             <span className="text-[11px] text-slate-400 block uppercase">Operational Breakeven:</span>
-            <div className="font-heading font-black text-2xl text-chalk-cyan mt-1">1,058 – 1,376</div>
+            <div className="font-heading font-black text-2xl text-chalk-cyan mt-1">28 – 35</div>
             <span className="text-[10px] text-slate-400">Units (₹10L Op Cost)</span>
           </div>
         </div>
@@ -200,7 +201,7 @@ export const MarketEconomics: React.FC = () => {
                 <div className="font-heading font-black text-2xl text-chalk-emerald my-1">
                   {formatLakhs(totalCapitalSaved)}
                 </div>
-                <span className="text-[10px] text-slate-400">98% CAPEX Reduction</span>
+                <span className="text-[10px] text-slate-400">{capexReductionPercent}% CAPEX Reduction</span>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-950 border border-chalk-cyan/30 shadow-md flex flex-col justify-between">
@@ -220,7 +221,7 @@ export const MarketEconomics: React.FC = () => {
                 <div className="font-heading font-black text-2xl text-chalk-amber my-1">
                   {formatLakhs(totalGrossProfit)}
                 </div>
-                <span className="text-[10px] text-slate-400">~47.25% Margin</span>
+                <span className="text-[10px] text-slate-400">79.4% margin</span>
               </div>
 
             </div>

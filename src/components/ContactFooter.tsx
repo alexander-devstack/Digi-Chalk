@@ -62,27 +62,16 @@ export const ContactFooter: React.FC<ContactFooterProps> = ({ onOpenPitchDeck })
             Interested in leading our ₹13L seed round, deploying classroom pilots, or reviewing technical IP? Reach out directly.
           </p>
 
-          {/* Airo Platform Pitch CTA */}
+          {/* Pitch Playbook CTA */}
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="https://airo.ai/share/Y2x1dWY3bTQxbDpjMzk6UW9nWS1tbm81cDA3"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => sound.playClick(900)}
-              className="px-5 py-3 rounded-xl bg-chalk-cyan hover:bg-sky-400 text-slate-950 font-heading font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-sky-500/15 transition-all active:scale-[0.98]"
-            >
-              <ExternalLink className="w-4 h-4" />
-              <span>Airo Platform Presentation</span>
-            </a>
-
             <button
               onClick={() => {
                 sound.playClick(800);
                 onOpenPitchDeck();
               }}
-              className="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-850 border border-white/10 text-slate-200 hover:text-white font-heading font-semibold text-xs sm:text-sm flex items-center gap-2 transition-all"
+              className="px-5 py-3 rounded-xl bg-chalk-cyan hover:bg-sky-400 text-slate-950 font-heading font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-sky-500/15 transition-all active:scale-[0.98]"
             >
-              <Download className="w-4 h-4 text-chalk-emerald" />
+              <Download className="w-4 h-4 text-slate-950" />
               <span>Download Pitch Playbook</span>
             </button>
           </div>

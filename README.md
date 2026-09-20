@@ -1,7 +1,7 @@
 # Digi-Chalk: AI-Driven Interactive Product Platform
 
 > **"Making Every Blackboard a Digital Classroom."**  
-> *Provisional Patent Filed (App No. 202641089516) • Indian Patent Office • TRL-2 → TRL-9 Pathway*  
+> _Provisional Patent Filed (App No. 202641089516) • Indian Patent Office • TRL-2 → TRL-9 Pathway_  
 > **Team Zero Resistance • Sri Ramakrishna Engineering College (SREC), Coimbatore**
 
 ---
@@ -20,6 +20,7 @@
 ## 🛠️ Hardware Subsystems & Itemized BOM (₹1,055)
 
 ### 1. Chalk Holder (Mobile Transmitter Unit)
+
 - **Processing Core**: Seeed XIAO ESP32-C3 (`0x68`, BLE GATT, ESP-NOW sync) — ₹280
 - **Motion & Inertial Tracking**: MPU6050 6-Axis IMU (Fast Mode `400kHz`, GPIO 4/5 SDA/SCL) — ₹60
 - **Acoustic Burst Transmitter**: MCUSD16P40B12RO (40kHz burst transmitter, MT3608 boost to 20-22V, IR2104/IRLZ44N driver) — ₹80
@@ -28,6 +29,7 @@
 - **Power & Failsafe**: 80mAh 3.7V LiPo + TP4056 USB-C charging + CR2032 failsafe Diode-OR bridge — ₹80
 
 ### 2. Corner Clips (Stationary Receiver Pair ×2)
+
 - **Base Compute & Sync**: ESP32 DevKitC-32E Subsystem (Microsecond timer interrupts & ESP-NOW) — ₹260
 - **Ultrasonic Receivers**: Murata MA40S4R 40kHz high-gain receivers — ₹80
 - **Analog Front-End (AFE)**: LM358 dual-stage gain (100x–1000x) + LM393 comparator & 1N4148 envelope detector — ₹20
@@ -74,10 +76,10 @@ $$\gamma_{k,i} = (Z_{k,i} - H_{k,i}X_k)^T (H_{k,i}P_k^-H_{k,i}^T + R_{k,i})^{-1}
 
 ## 👥 Team Zero Resistance (SREC Coimbatore)
 
-- **Alexander Samuel R** — Founder: Hardware, Firmware & Product Lead (`alexandersamuel2310@gmail.com` | `+91 63620 58595` | [LinkedIn](https://linkedin.com/in/alexandersamuel2006))
-- **Bhargavan Balaji** — Co-Founder: Hardware & Technical Supervisor (Power topologies, MT3608 + IR2104 drive circuits)
-- **Kaniska Sri S** — Product Design Lead: UI/UX Developer (Ergonomic chassis, alignment wedges, teacher UX)
-- **Mithra Karthikeyan** — Marketing Lead / Lead Strategy Lead: Full Stack AI Developer (Edge MobileNet, Cloud-ML EWS, SSA/StartupTN partnership)
+- **Alexander Samuel R** — Founder & CTO (`alexandersamuel2310@gmail.com` | `+91 63620 58595` | [LinkedIn](https://linkedin.com/in/alexandersamuel2006))
+- **Mithra Karthikeyan** — CEO (Full Stack AI Developer, Edge MobileNet, Cloud-ML EWS, SSA/StartupTN partnership)
+- **Bhargavan Balaji** — Co-Founder and CPO (Power topologies, MT3608 + IR2104 drive circuits)
+- **Kaniska Sri S** — CFO (EEE Dept, Financial modeling, Ergonomic chassis, alignment wedges)
 
 ---
 
@@ -103,8 +105,3 @@ npm run dev
 # 4. Build production bundle
 npm run build
 ```
-
----
-
-## 🔗 Verified Pitch Deck
-- **Airo Platform Interactive Presentation**: [https://airo.ai/share/Y2x1dWY3bTQxbDpjMzk6UW9nWS1tbm81cDA3](https://airo.ai/share/Y2x1dWY3bTQxbDpjMzk6UW9nWS1tbm81cDA3)

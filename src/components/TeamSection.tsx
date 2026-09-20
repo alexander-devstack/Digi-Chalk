@@ -18,7 +18,7 @@ export const TeamSection: React.FC = () => {
   const teamMembers = [
     {
       name: 'Alexander Samuel R',
-      role: 'Founder — Hardware, Firmware & Product Lead',
+      role: 'Founder & CTO',
       affiliation: 'Sri Ramakrishna Engineering College (EEE)',
       expertise: 'ESP32-C3 firmware architecture, KiCad multi-layer PCB design, TDOA tracking logic, and lead patent author.',
       email: 'alexandersamuel2310@gmail.com',
@@ -28,8 +28,16 @@ export const TeamSection: React.FC = () => {
       icon: Cpu,
     },
     {
+      name: 'Mithra Karthikeyan',
+      role: 'CEO',
+      affiliation: 'Sri Ramakrishna Engineering College (IT)',
+      expertise: 'Edge MobileNet diagram beautification, Cloud-ML Early Warning System (EWS), and SSA/StartupTN partnership strategy.',
+      badge: 'AI & Strategy Lead',
+      icon: Code,
+    },
+    {
       name: 'Bhargavan Balaji',
-      role: 'Co-Founder — Hardware & Technical Supervisor',
+      role: 'Co-Founder and CPO',
       affiliation: 'Sri Ramakrishna Engineering College (EEE)',
       expertise: 'Power system topologies, transducer excitation drive circuits (MT3608 + IR2104), analog front-end verification, and bench testing.',
       badge: 'Hardware Lead',
@@ -37,19 +45,11 @@ export const TeamSection: React.FC = () => {
     },
     {
       name: 'Kaniska Sri S',
-      role: 'Product Design Lead — UI/UX Developer',
-      affiliation: 'Sri Ramakrishna Engineering College (IT)',
-      expertise: 'Ergonomic chalk holder mechanics, dual alignment wedges, intuitive educator dashboard, and physical chassis prototyping.',
-      badge: 'UI/UX Lead',
+      role: 'CFO',
+      affiliation: 'Sri Ramakrishna Engineering College (EEE)',
+      expertise: 'Financial modeling, budget allocation, ergonomic chalk holder mechanics, dual alignment wedges, and physical chassis prototyping.',
+      badge: 'CFO & Product Design',
       icon: Compass,
-    },
-    {
-      name: 'Mithra Karthikeyan',
-      role: 'Marketing Lead / Lead Strategy Lead — Full Stack AI Developer',
-      affiliation: 'Sri Ramakrishna Engineering College (IT)',
-      expertise: 'Edge MobileNet diagram beautification, Cloud-ML Early Warning System (EWS), and SSA/StartupTN partnership strategy.',
-      badge: 'AI & Strategy Lead',
-      icon: Code,
     },
   ];
 

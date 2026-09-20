@@ -16,7 +16,7 @@ export const ProblemComparison: React.FC = () => {
       metric: 'Unit Cost',
       smartBoard: '₹80,000 – ₹2,00,000+',
       projectorKit: '₹25,000 – ₹50,000',
-      digiChalk: '₹2,000 (Target BOM ₹1,055)',
+      digiChalk: '₹45,000 (Target BOM ₹9,270)',
       isHighlight: true,
     },
     {

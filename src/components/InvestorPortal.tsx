@@ -97,27 +97,16 @@ export const InvestorPortal: React.FC<InvestorPortalProps> = ({ onOpenPitchDeck 
             <strong className="text-chalk-emerald">₹13,00,000</strong> carries Digi-Chalk from TRL-2 to a certified, multi-district, production-ready market leader across India's 1.5M classrooms in 12–15 months.
           </p>
 
-          {/* Direct Link to Airo Platform Pitch CTA */}
+          {/* Direct Link to Pitch Playbook CTA */}
           <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
-            <a
-              href="https://airo.ai/share/Y2x1dWY3bTQxbDpjMzk6UW9nWS1tbm81cDA3"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => sound.playClick(900)}
-              className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-chalk-cyan to-chalk-emerald text-slate-950 font-heading font-bold text-sm flex items-center gap-2 shadow-lg shadow-chalk-cyan/25 hover:shadow-chalk-cyan/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
-            >
-              <ExternalLink className="w-4 h-4 text-slate-950" />
-              <span>View Verified Pitch on Airo Platform</span>
-            </a>
-
             <button
               onClick={() => {
                 sound.playClick(800);
                 onOpenPitchDeck();
               }}
-              className="px-6 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-white/15 text-slate-200 hover:text-white font-heading font-semibold text-sm flex items-center gap-2 transition-all"
+              className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-chalk-cyan to-chalk-emerald text-slate-950 font-heading font-bold text-sm flex items-center gap-2 shadow-lg shadow-chalk-cyan/25 hover:shadow-chalk-cyan/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
             >
-              <Download className="w-4 h-4 text-chalk-cyan" />
+              <Download className="w-4 h-4 text-slate-950" />
               <span>Download Pitch Playbook</span>
             </button>
           </div>
